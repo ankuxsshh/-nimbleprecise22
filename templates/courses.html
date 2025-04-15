@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Section with Background Image -->
+<div class="hero-section position-relative text-white text-center d-flex align-items-center justify-content-center" style="background-image: url('{% static 'images/courses_background.jpg' %}'); background-size: cover; background-position: center; height: 60vh;">
+  <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6); top: 0; left: 0;"></div>
+  <h1 class="z-1 display-4 fw-bold">Our Courses</h1>
+</div>
+
+<!-- Courses Section -->
+<div class="container my-5">
+  <div class="row text-center mb-4">
+    <div class="col">
+      <h2 class="fw-bold">Explore Our Popular Courses</h2>
+      <p class="text-muted">Engaging and effective programs for students of all ages</p>
+    </div>
+  </div>
+  
+  <div class="row g-4">
+    <!-- Course Card -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 shadow rounded-4 border-0">
+        <img src="{% static 'images/course_1.jpg' %}" class="card-img-top rounded-top-4" alt="ABACUS">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0"><a href="#" class="text-decoration-none text-dark">ABACUS</a></h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 shadow rounded-4 border-0">
+        <img src="{% static 'images/course_2.jpg' %}" class="card-img-top rounded-top-4" alt="VEDIC MATHS">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0"><a href="#" class="text-decoration-none text-dark">VEDIC MATHS</a></h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 shadow rounded-4 border-0">
+        <img src="{% static 'images/course_3.jpg' %}" class="card-img-top rounded-top-4" alt="RUBIK'S CUBE">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0"><a href="#" class="text-decoration-none text-dark">RUBIK'S CUBE</a></h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 shadow rounded-4 border-0">
+        <img src="{% static 'images/course_4.jpg' %}" class="card-img-top rounded-top-4" alt="TECH WORLD">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0"><a href="#" class="text-decoration-none text-dark">TECH WORLD</a></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

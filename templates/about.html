@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  About Us | NIMBLE PRECISE
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section with Background Image -->
+<div class="hero-section position-relative text-white text-center d-flex align-items-center justify-content-center" style="background-image: url('{% static 'images/courses_background.jpg' %}'); background-size: cover; background-position: center; height: 60vh;">
+    <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6); top: 0; left: 0;"></div>
+    <h1 class="z-1 display-4 fw-bold">About Us</h1>
+  </div>
+  <!-- Services -->
+
+  <!-- About Us Section -->
+<section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        
+        <!-- Left Image -->
+        <div class="col-lg-6">
+          <img src="{% static 'images/banner-item-01.jpg' %}" alt="About NIMBLE PRECISE" class="img-fluid rounded shadow" style="height: 500px; width: auto;">
+        </div>
+  
+        <!-- Right Content -->
+        <div class="col-lg-6">
+          <h2 class="mb-3">Who We Are</h2>
+          <p class="lead text-muted">
+            NIMBLE PRECISE is a leading education and skill development organization focused on empowering individuals through world-class learning experiences. Our mission is to provide accessible, high-quality education and training programs to help learners succeed in their careers and personal growth.
+          </p>
+          <p>
+            With a wide range of online and offline courses, expert instructors, and an innovative learning platform, we strive to make education more engaging, effective, and tailored to the needs of modern learners. Whether you're a student, professional, or lifelong learner, NIMBLE PRECISE is your trusted partner in the journey of continuous learning.
+          </p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check2-circle text-primary me-2"></i> Industry-recognized programs</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i> Expert faculty and mentors</li>
+            <li><i class="bi bi-check2-circle text-primary me-2"></i> Modern learning facilities & digital resources</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="services page_section">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="section_title text-center">
+            <h1>Our Services</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row services_row">
+        <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+          <div class="icon_container d-flex flex-column justify-content-end">
+            <img src="{% static 'images/earth-globe.svg' %}" alt="" />
+          </div>
+          <h3>Online Courses</h3>
+          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+        </div>
+
+        <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+          <div class="icon_container d-flex flex-column justify-content-end">
+            <img src="{% static 'images/exam.svg' %}" alt="" />
+          </div>
+          <h3>Indoor Courses</h3>
+          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+        </div>
+
+        <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+          <div class="icon_container d-flex flex-column justify-content-end">
+            <img src="{% static 'images/books.svg' %}" alt="" />
+          </div>
+          <h3>Amazing Library</h3>
+          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+        </div>
+
+        <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+          <div class="icon_container d-flex flex-column justify-content-end">
+            <img src="{% static 'images/professor.svg' %}" alt="" />
+          </div>
+          <h3>Exceptional Professors</h3>
+          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+        </div>
+
+        <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+          <div class="icon_container d-flex flex-column justify-content-end">
+            <img src="{% static 'images/blackboard.svg' %}" alt="" />
+          </div>
+          <h3>Top Programs</h3>
+          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+        </div>
+
+        <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+          <div class="icon_container d-flex flex-column justify-content-end">
+            <img src="{% static 'images/mortarboard.svg' %}" alt="" />
+          </div>
+          <h3>Graduate Diploma</h3>
+          <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+{% endblock %}
